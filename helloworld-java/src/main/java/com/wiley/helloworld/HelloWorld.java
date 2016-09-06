@@ -1,4 +1,4 @@
-package com.wiley.hellworld;
+package com.wiley.helloworld;
 
 /**
  * Hello world!

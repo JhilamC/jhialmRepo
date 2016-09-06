@@ -1,7 +1,8 @@
-package com.wiley.hellworld;
+package com.wiley.helloworld;
+
+import com.wiley.helloworld.HelloWorld;
 
 import junit.framework.TestCase;
-import com.wiley.hellworld.HelloWorld;
 
 public class HelloWorldTest  extends TestCase {
 
@@ -10,7 +11,7 @@ public class HelloWorldTest  extends TestCase {
 	}
 
 	public void testHelloWorld() throws Exception {
-		String testMessage="Hello World!!!!";
+		String testMessage="Hello World!";
 		HelloWorld helloWorld = new HelloWorld("Hello World!");
 		assertEquals(testMessage,helloWorld.printMessage());
 	}
