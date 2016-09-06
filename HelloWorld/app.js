@@ -1,7 +1,7 @@
-
-/**
+/*
+*//**
  * Module dependencies.
- */
+ *//*
 
 var express = require('express')
   , routes = require('./routes')
@@ -33,3 +33,21 @@ app.get('/users', user.list);
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
 });
+*/
+
+
+var express = require('express');
+var app = express();
+var exports = module.exports = {};
+
+app.get('/', function(req, res){
+  res.send('Hello World');
+});
+
+var server = app.listen(3000, function(){
+  console.log('Magic is happening on port 3000');
+});
+
+exports.closeServer = function(){
+  server.close();
+};
