@@ -11,7 +11,7 @@ public class HelloWorldTest  extends TestCase {
 	}
 
 	public void testHelloWorld() throws Exception {
-		String testMessage="Hello World!!!";
+		String testMessage="Hello World!";
 		HelloWorld helloWorld = new HelloWorld("Hello World!");
 		assertEquals(testMessage,helloWorld.printMessage());
 	}
