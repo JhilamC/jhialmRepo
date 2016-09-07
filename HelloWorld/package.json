@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node app.js",
-    "test": "mocha --recursive -R xunit test/ > test-reports.xml"    	
+    "test": "mocha --cobertura --recursive -R xunit test/ > test-reports.xml"    	
   },
   "dependencies": {
     "express": "3.2.6",
